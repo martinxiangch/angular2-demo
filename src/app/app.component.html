@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h3>tooltip: </h3>
+
+<div appTooltip="Hello world!"> div content
+</div>
+
+<h3>panel: </h3>
+
+<fancy-button>
+    <span>I will <i>be</i> projected</span>
+</fancy-button>
+<br>
+<br>
+<br>
+<panel>
+    <panel-title>Sample title</panel-title>
+    <panel-content>Content</panel-content>
+</panel>
+<br>
+<br>
+<h3>tabs: {{tabparam}} </h3>
+<tabs (tabChanged)="tabChanged($event)">
+    <tab title="Tab 1">
+        Content 1
+    </tab>
+    <tab title="Tab 2">
+        Content 2
+    </tab>
+    <tab title="Tab 23">
+        <div>aaaaa
+            <button>click</button>
+            <h4>aaa</h4>
+            <h4>aaa</h4>
+            <h4>aaa</h4>
+            <h4>aaa</h4>
+        </div>
+    </tab>
+    <tab title="Tab 233">
+        Content 2
+    </tab>
+    <tab title="Tab 2123">
+        Content 2
+    </tab>
+</tabs>
+
+<h3> custome tab content {{tabparam2}}</h3>
+<tabs2 (tabChanged)="tabChanged2($event)">
+    <tab-title>Tab 1</tab-title>
+    <tab-content>Content 1</tab-content>
+    <tab-title>Tab 2</tab-title>
+    <tab-content>Content 2</tab-content>
+</tabs2>
+
+<h3> </h3>
+<a [routerLink]="['/view1']">view1</a>
+<br>
+<br>
+<a [routerLink]="['/view2']">view2</a>
+<router-outlet></router-outlet>
